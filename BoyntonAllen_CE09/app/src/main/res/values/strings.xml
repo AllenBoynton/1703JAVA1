@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BoyntonAllen_CE09</string>
+
+    <string name="get_data">Get data</string>
+
+    <string name="isConnectedToast">You are connected.</string>
+
+    <string name="noWebToast">Web service not available</string>
+
+    <string name="noNetworkToast">Network isn\'t available</string>
+
+</resources>
