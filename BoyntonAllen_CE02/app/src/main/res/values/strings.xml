@@ -2,4 +2,28 @@
 
     <string name="app_name">BoyntonAllen_CE02</string>
 
+    // Button string
+    <string name="submit_guess">Submit Guess</string>
+
+    // AlertDialogs strings
+    <string name="playAgain">Play Again</string>
+    <string name="allCorrect">You guessed all numbers correctly.</string>
+    <string name="success">Success!</string>
+    <string name="failed">Failure!</string>
+    <string name="noGuesses">You have run out of guesses.</string>
+
+    // Toast strings
+    <string name="guessesLeft">" guesses remaining"</string>
+    <string name="error">Error</string>
+    <string name="ensureSubmit">Ensure all fields are filled out before submitting a guess.</string>
+    <string name="ok">OK</string>
+    <string name="oneGuessLeft">" guess remaining"</string>
+    <string name="restarted">Game Restarted</string>
+
+    // Hint strings
+    <string name="hint4">0 to 9</string>
+    <string name="hint3">0 to 9</string>
+    <string name="hint2">0 to 9</string>
+    <string name="hint1">0 to 9</string>
+
 </resources>

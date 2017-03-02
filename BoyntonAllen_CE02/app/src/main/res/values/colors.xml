@@ -5,4 +5,10 @@
     <color name="colorPrimaryDark">#222222</color>
     <color name="colorAccent">#FF4500</color>
 
+    // Custom button
+    <color name="grey_temp">#808080</color>
+    <color name="grey_dark">#303030</color>
+    <color name="bright_white">#ffff</color>
+    <color name="button_grey">#505050</color>
+
 </resources>
