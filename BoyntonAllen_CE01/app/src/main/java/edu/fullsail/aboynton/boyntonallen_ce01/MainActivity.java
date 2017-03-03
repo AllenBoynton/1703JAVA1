@@ -1,3 +1,9 @@
+// Allen Boynton
+
+// JAV1 - 1703
+
+// MainActivity.java
+
 package edu.fullsail.aboynton.boyntonallen_ce01;
 
 import android.support.v7.app.AppCompatActivity;

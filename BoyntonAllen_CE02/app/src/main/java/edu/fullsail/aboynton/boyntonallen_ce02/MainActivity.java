@@ -21,7 +21,7 @@ import java.util.Random;
 public class MainActivity extends AppCompatActivity {
 
     // Constants for testing code / determines 0-9
-    private static final String TAG = "VERIFIED_WORKS";
+    private static final String TAG = "MainActivity";
     private static final int numOfElements = 10;
 
     // Initializing each editText
@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
     private Random randomNumber;
 
     // Initialize user's number of guesses as 4 and counting down as button is tapped
-    private static int totalGuesses = 3;
+    private static int totalGuesses;
     private boolean isGameComplete;
 
     @Override
@@ -135,8 +135,8 @@ public class MainActivity extends AppCompatActivity {
                 new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        Toast.makeText(MainActivity.this, R.string.restarted,
-                                Toast.LENGTH_SHORT).show();
+//                        Toast.makeText(MainActivity.this, R.string.restarted,
+//                                Toast.LENGTH_SHORT).show();
                         restart();
                     }
                 });
@@ -155,8 +155,8 @@ public class MainActivity extends AppCompatActivity {
                     new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
-                            Toast.makeText(MainActivity.this, R.string.restarted,
-                                    Toast.LENGTH_SHORT).show();
+//                            Toast.makeText(MainActivity.this, R.string.restarted,
+//                                    Toast.LENGTH_SHORT).show();
                             restart();
                         }
                     });
@@ -167,7 +167,6 @@ public class MainActivity extends AppCompatActivity {
     // Toast alert if editViews are empty
     private boolean noTextToast() {
         Log.i(TAG, "----> noTextToast(editTexts.length): " + (editTexts.length));
-//        showRemainingGuesses(totalGuesses);
         for (EditText editText : editTexts) {
             if (editText.getText().toString().isEmpty()) {
                 Log.i(TAG, "----> noTextToast(empty): " + editText.getText().toString().isEmpty());
@@ -215,5 +214,6 @@ public class MainActivity extends AppCompatActivity {
 
         // Resets # of guesses with new game
         totalGuesses = 3;
+        showRemainingGuesses(totalGuesses);
     }
 }
