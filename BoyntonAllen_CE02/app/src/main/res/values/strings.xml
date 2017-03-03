@@ -18,6 +18,7 @@
     <string name="ensureSubmit">Ensure all fields are filled out before submitting a guess.</string>
     <string name="ok">OK</string>
     <string name="oneGuessLeft">" guess remaining"</string>
+    <string name="startGuessToast">Starting with 4 guesses.</string>
     <string name="restarted">Game Restarted</string>
 
     // Hint strings
