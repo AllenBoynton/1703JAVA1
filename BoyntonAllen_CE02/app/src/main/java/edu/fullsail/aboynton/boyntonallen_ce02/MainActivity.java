@@ -11,6 +11,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -18,6 +19,8 @@ import android.widget.Toast;
 import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
+
+    private static final String TAG = "MainActivity";
 
     // Constants for testing code / determines 0-9
     private static final int randomNumber = 10;
@@ -38,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Log.d(TAG, "----> onCreate(): ON");
 
         // Set OnClick for submit button
         findViewById(R.id.submit_guess).setOnClickListener(listener);
@@ -59,6 +63,8 @@ public class MainActivity extends AppCompatActivity {
         // Using currentTimeMillis to calculate random number as recommended
         randomGenerator = new Random(System.currentTimeMillis());
         restart();
+
+        Log.d(TAG, "<---- onCreate(): OFF");
     }
 
     // Steps of entering guess, comparing, updating and give results
