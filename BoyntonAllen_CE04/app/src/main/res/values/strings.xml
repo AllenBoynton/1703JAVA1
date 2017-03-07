@@ -2,4 +2,27 @@
 
     <string name="app_name">BoyntonAllen_CE04</string>
 
+    // Submit checking button
+    <string name="button_checker">Check Entries</string>
+
+    // Mini-Sudoku
+    <string name="gameName">Mini-Sudoku</string>
+
+    // Numbers used in game
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="_4">4</string>
+
+    // Toasts and dialog alerts
+    <string name="toastIncomplete">Puzzle is incomplete</string>
+    <string name="alertBoardChecked">Board Checked</string>
+    <string name="alertHasErrors">Has errors as per the game rules</string>
+    <string name="alertComplete">The puzzle is complete!</string>
+    <string name="close">Close</string>
+    <string name="closeToast">Close Button Clicked</string>
+    <string name="resetBoard">Reset Board</string>
+    <string name="resetToast">Board reset!</string>
+
+
 </resources>
