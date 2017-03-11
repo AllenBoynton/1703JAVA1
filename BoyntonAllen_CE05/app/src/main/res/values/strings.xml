@@ -1,0 +1,32 @@
+<resources>
+
+    <string name="app_name">BoyntonAllen_CE05</string>
+
+    // Hint string
+    <string name="enter_string">Enter a word to add.</string>
+
+    // Button strings
+    <string name="add_button">Add</string>
+    <string name="view_button">View</string>
+
+    // Math field strings
+    <string name="average_label">Average word length:</string>
+    <string name="median_label">  Median word length: </string>
+
+    // Alert dialog when "View" button is tapped
+    <string name="alert_dialog">Alert Dialog</string>
+    <string name="wordMsgAlert">The word is…</string>
+    <string name="close">CLOSE</string>
+    <string name="remove">REMOVE</string>
+
+    // Toast messages for invalid entries
+    <string name="noEntryToast">Nothing was entered.</string>
+    <string name="zeroLengthToast">Length of trimmed string is zero.</string>
+    <string name="uniqueStringToast">Enter unique strings only.</string>
+
+    <string name="wordPickedAlert">Word picked from array.</string>
+    <string name="alert_toast_closed">Close Button Clicked</string>
+    <string name="alert_removed_confirmation">Word Removed</string>
+    <string name="emptyStringList">No words to view.</string>
+
+</resources>
