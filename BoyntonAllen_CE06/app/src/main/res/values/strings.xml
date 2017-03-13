@@ -1,3 +1,26 @@
 <resources>
+
     <string name="app_name">BoyntonAllen_CE06</string>
+
+    // Label spinners
+    // The first spinner should allow the user to select either "Grid View" or "List View".
+    <string name="view_prompt">Grid View</string>
+
+    // The second spinner should allow the user to select either "Array Adapter", "Simple Adapter", or "Base Adapter".
+    <string name="adapter_prompt">List View</string>
+
+    <string-array name="view_arrays">
+        <item>List View</item>
+        <item>Grid View</item>
+    </string-array>
+
+    <string-array name="adapter_arrays">
+        <item>Array Adapter</item>
+        <item>Simple Adapter</item>
+        <item>Base Adapter</item>
+    </string-array>
+
+    // Alert dialog
+    <string name="okayDialogButton">Okay</string>
+
 </resources>
