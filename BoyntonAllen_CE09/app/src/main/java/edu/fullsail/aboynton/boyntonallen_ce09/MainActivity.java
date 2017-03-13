@@ -25,11 +25,14 @@ import edu.fullsail.aboynton.boyntonallen_ce09.parser.BookJSONParser;
 
 public class MainActivity extends AppCompatActivity {
 
+    // Create Log for console checks
     private static final String TAG = "MainActivity.TAG";
 
+    // Create class variables for views
     private GridView bookGridView;
     private ProgressBar progressBar;
-//    private ArrayList<GetBooksTask> tasks;
+
+    // Create an ArrayList to hold the book object data
     private ArrayList<Book> bookList;
 
     @Override
@@ -38,11 +41,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Log.d(TAG, "onCreate: ON");
 
+        // Reference resource file for gridView
         bookGridView = (GridView) findViewById(R.id.bookGridView);
 
+        // Reference resource file for gridView - invisible when not in use
         progressBar = (ProgressBar) findViewById(R.id.progressBar);
         progressBar.setVisibility(View.INVISIBLE);
 
+        // If online check
         if (isOnline()) {
             requestData();
         }
@@ -104,7 +110,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private boolean isOnline() {
-        Log.i(TAG, " <---- isOnline()");
+        Log.i(TAG, " ----> isOnline()");
 
         ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo netInfo = connectivityManager.getActiveNetworkInfo();

@@ -25,7 +25,7 @@ public class BookJSONParser {
 
             ArrayList<Book> bookList = new ArrayList<>();
 
-            for (int i = 0; i < booksJson.length(); i++) {
+            for (int i = 0; i < booksJson.length(); ++i) {
                 JSONObject items = booksJson.getJSONObject(i);
                 JSONObject volumeInfo = items.getJSONObject("volumeInfo");
                 JSONObject imageLinks = volumeInfo.getJSONObject("imageLinks");
@@ -38,7 +38,6 @@ public class BookJSONParser {
 
                 bookList.add(book);
             }
-
             return bookList;
         }
         catch (JSONException e) {
